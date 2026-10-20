@@ -1,0 +1,11 @@
+{
+  "capitulo": 1,
+  "escenas": [
+    {
+      "id": 1,
+      "personaje": "Ana",
+      "dialogo": "¿Qué crees que está pasando, Luis? Todo este silencio me da miedo.",
+      "prompt_visual": "La luz se apaga súbitamente en una sala oscura, Ana se estremece y mira nerviosamente a su alrededor mientras Luis intenta tranquilizarla."
+    }
+  ]
+}

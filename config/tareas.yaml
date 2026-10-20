@@ -1,0 +1,52 @@
+estructurar_capitulos_task:
+  description: >
+    Toma la biblia de la historia o la trama general provista por el usuario y divídela 
+    en una estructura secuencial de capítulos. Para cada capítulo asignado, debes mapear 
+    la progresión dramática exacta sin escribir diálogos largos ni prosa narrativa. 
+    Asegúrate de que cada capítulo cumpla con los estándares del melodrama latinoamericano 
+    (conflictos familiares, barreras sociales y pasiones intensas) y que tenga un ritmo ágil.
+  expected_output: >
+    Una lista detallada en formato Markdown o JSON estructurado para cada capítulo que incluya:
+      - capitulo_numero: [Número]
+      - titulo: [Título comercial y sugerente]
+      - objetivo_narrativo: [Qué avanza en la trama]
+      - personajes_en_escena: [Lista de personajes activos]
+      - secuencia_de_eventos: [Paso a paso cronológico del inicio, medio y fin]
+      - conflicto_del_capitulo: [La miniproblemática del episodio]
+      - gancho_final_cliffhanger: [El evento o revelación con la que cierra]
+      - nota_de_ritmo: [Consejo técnico para el escritor]
+  agent: guionista_estructurador
+
+
+redactar_capitulo_task:
+  description: >
+    Toma la escaleta detallada del capítulo generada por el 'guionista_estructurador' 
+    y redacta el capítulo completo en prosa narrativa continua (estilo novela o libro web). 
+    
+    Debes seguir estrictamente el orden de la 'secuencia_de_eventos', desarrollar el 
+    'conflicto_del_capitulo' y cerrar exactamente en el 'gancho_final_cliffhanger' indicado.
+    
+    REGLAS DE FORMATO Y PROSA NARRATIVA:
+      1. PROHIBIDO conservar el formato de esquema, listas con asteriscos (*), viñetas o subtítulos como '### Secuencia de Eventos' o '### Conflictos'.
+      2. Escribe en párrafos de narrativa fluidos y utiliza guiones largos (—) para los diálogos entre personajes.
+      3. Escribir diálogos dinámicos que reflejen la personalidad y el trasfondo de los personajes.
+      4. Utilizar párrafos cortos y directos (estilo lectura móvil moderna).
+      5. Mantener una extensión profunda y desarrollada (apuntando a entre 2,000 y 2,500 palabras por capítulo).
+      6. Evitar explicaciones innecesarias; muestra las acciones y emociones a través de los personajes (Show, don't tell).
+  expected_output: >
+    El texto completo del capítulo redactado exclusivamente en prosa narrativa y diálogos de novela en formato Markdown, listo para su publicación, incluyendo el título del capítulo centrado al inicio.
+  agent: escritor_creativo_capitulos
+
+
+generar_storyboard_task:
+  description: >
+    Toma el texto completo del capítulo redactado y divídelo en exactamente entre 5 y 10 escenas clave que 
+    representen visualmente el progreso de la historia.
+    
+    Para cada escena debes definir:
+    1. Un resumen de la acción visual.
+    2. La descripción del encuadre y ambiente (iluminación, ángulo de cámara, paleta de colores).
+    3. Un prompt detallado en inglés optimizado para generadores de imágenes por IA.
+  expected_output: >
+    Una lista de entre 5 y 10 escenas en formato JSON estructurado que incluya: numero_escena, fragmento_texto, descripcion_visual, personajes_en_escena y prompt_ingles.
+  agent: director_storyboard

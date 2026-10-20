@@ -1,0 +1,173 @@
+# Fase 1 — Herramientas para Storytelling con IA
+
+## Objetivo
+
+Identificar y comparar herramientas de narrativa asistida por IA y de guionado multimedia.
+
+## Entregable (en 15 días)
+
+- **Adelanto / informe breve** con: lista priorizada de herramientas, criterios de comparación y 3–5 hallazgos clave.
+- Fecha objetivo: 13 de septiembre de 2026
+
+## Checklist de trabajo
+
+- [ ]  Definir criterios de comparación (tramas, personajes, diálogos, estilos, exportación, costo, idioma, límites).
+- [ ]  Identificar plataformas de narrativa asistida (ChatGPT, Gemini, Claude, Perplexity, [Character.AI](http://Character.AI), etc.).
+- [ ]  Analizar herramientas para guiones/multimedia (Storyboarder, [Tome.app](http://Tome.app), Canva Magic Write). **Storyboard Hero:** storyboarder.ia,
+- [ ]  Crear tabla comparativa (funciones + pros/contras + casos de uso).
+- [ ]  Conclusiones y recomendaciones iniciales.
+
+## Notas / Evidencias
+
+- Enlaces, capturas, prompts usados y resultados.
+
+En primera instancia use la IA para un mapa general sobre las distintas herramientas de IA enfocadas al storytalleing
+
+### promt:
+
+“Hola, me gusta escuchar novelas subidas a youtube y algunas son traducidas al español, en un principio, solo se colocaba una imagen de fondo y voz narradora que leeia la historia
+
+pero con el avance la IA, ahora la traducción se hace con IA
+
+también lo que antes era una imagen de fondo pasaron a ser una secuencia de imágenes con cierta congruencia con la narrativa
+
+actualmente ya no son solo imágenes, sino video con gran congruencia y bien logrado (sin errores  de contexto, como que mantiene la misma ropa el personaje en casi todas las escenas)
+
+y me preguntaba con que herramientas se apoyan para crear estas novelas/comics/animaciones ya que es evidente que usan IA
+
+dime que hermientas hay para generar:
+
+- la historia (que tenga congruencia relación de eventos y una estructura definida de la historia)
+- la traducción ( esto es mas echo por los que encuentran las historias y quieren traducirla)
+- la visualización (ya sea en formato cómic, formato de secuencia de imágenes, o video)
+- audio (voz para el narrador, voz para personajes, efectos de sonido como brisa, caminata)
+- acompañamiento (melodías de fondo, bgm para los momentos intensos como batallas)”
+
+## Tabla comparativa (respuestas Gemini / Claude / DeepSeek)
+
+| Etapa del flujo | Gemini (Pro) — herramientas / enfoque | Claude — herramientas / enfoque | DeepSeek (con contexto China) — herramientas / enfoque |
+| --- | --- | --- | --- |
+| 1) Historia (congruencia y estructura) | **NovelAI**, **Sudowrite** (Lorebooks / “biblia” del mundo y personajes). **Claude 3.5 Sonnet/Opus** (prosa y seguimiento de estructura). **Gemini 1.5 Pro / GPT‑4o** (ventanas de contexto grandes para cargar/reestructurar capítulos o novelas completas). | **LLMs generales** (ChatGPT/Claude/Gemini) para resumir, ajustar ritmo y crear *cliffhangers*. Especializadas: **Jenova AI**, **Noveble**, **Musely** (biblia de personajes; estructuras para 60–100 episodios; marcos como 3 actos/viaje del héroe). | Sistemas / modelos orientados a webnovels y microdramas: **Jinyuan Writers' Studio – AI Showrunner** (multi‑agente con roles y control de calidad). **中文逍遥 (Xiaoyao / Chinese Online)** (borradores y novelas “1 clic”). **MM‑StoryAgent** (open source; esquema → expansión por capítulos). **谜境Agent (Mijing Agent)** (novelas interactivas; usa DeepSeek R1 para esquema/personajes/escenas). |
+| 2) Traducción | **DeepL Pro** (base de alto volumen). **LLMs con prompts contextuales** (ChatGPT/Gemini) para español neutro, adaptación cultural y consistencia de términos (*wuxia/xianxia*). | **DeepL**  • **LLMs (ChatGPT/Claude/Gemini)** como flujo combinado: pre‑traducción + pulido creativo/cultural; con contexto grande se puede mantener terminología a lo largo de toda la obra. | **中文逍遥 (Xiaoyao)** con “traducción localizada 1 clic”; enfoque industrial (novelas a múltiples idiomas/mercados). |
+| 3) Visualización (cómic / secuencia / video) | Imagen: **Stable Diffusion + ComfyUI** (LoRAs + ControlNet para consistencia). **Midjourney v6** (referencias `-cref`/`-sref`). Video: **Runway Gen‑3 Alpha**, **Luma Dream Machine**, **Kling AI** (animación desde imagen con coherencia). | En video: **Kling AI 3.0** (consistencia), **Google Veo 3/3.1**, **Seedance 2.0**, **Hedra (Character‑3)** (diálogo/cabezas parlantes). Plataformas nicho: **PixVerse**, **Elser AI**. Para estático: **Midjourney**, **Flux**, “Nano Banana/Gemini” + personaje de referencia (LoRA/imagen base). | Pipeline integrado: **Jinyuan Writers' Studio** (casting con imagen referencia; generación de imagen con **Wan2.7‑image‑pro**; animación con **Wan image‑to‑video**; montaje con subtítulos). **中文逍遥 (Xiaoyao)** (cómic y *donghua*). Menciona uso de **ComfyUI** y nodos personalizados como parte de flujos. |
+| 4) Audio (narrador, voces, SFX) | Voces: **ElevenLabs** (TTS emocional; perfiles por personaje). SFX: **ElevenLabs Sound Effects**, **AudioLDM** (foley por texto). | Voces: **ElevenLabs**, **Fish Audio**, **MiniMax**, **Gemini TTS**. Paquetes para audiolibro/multivoz: **Noiz AI**, **AIWriteBook** (narrador + voces por personaje). SFX: **Stable Audio 2.5**  • módulo SFX de ElevenLabs. | Voces: **Qwen3‑TTS** (Alibaba; clonado con ~3 s; multi‑personaje; control emocional; usable en ComfyUI). Dirección de actuación: **Dramabox**. Audiolibros OSS: **Alexandria Audiobook Generator**. Comercial multilenguaje: **MiniMax Speech 2.8 Turbo**. Audio escena completa: **Fun‑AudioGen‑VD** (voz + ambiente + pasos + brisa, etc.). |
+| 5) Música / BGM | **Suno**, **Udio** (pistas completas). **Mubert** (ambiental en loop; menor fricción de copyright). | **Suno**, **Udio** (líderes). **AIVA** (banda sonora orquestal/cinemática). **Mubert** (énfasis en licencias limpias para YouTube). | (Mencionado) **Fun‑AudioGen‑VD** como audio de escena completa también puede cubrir ambiente/BGM; **MM‑StoryAgent** puede coordinar música/SFX con la historia. |
+
+## Herramientas
+
+Para mantener el alcance del proyecto controlado, he decidido **limitar las herramientas** que utilizaré durante el desarrollo. **De manera preliminar**, para la fase de narrativa emplearé **Gemini, Sudowrite, NovelAI y Claude** (orientadas a ideación, estructura, continuidad y redacción).
+
+En cuanto a las herramientas para **guion, storyboard y diseño de layouts**, estas **aún se encuentran en proceso de investigación y evaluación**, por lo que su selección definitiva se confirmará en una etapa posterior, una vez se definan los criterios técnicos y el flujo de trabajo más adecuado.
+
+## Narrativa
+
+### **Criterios Evaluativos Principales (Dimensión Central)**
+
+- **Construcción y Consistencia de Personajes:** Mide la capacidad del modelo para mantener la voz, personalidad, motivaciones y rasgos distintivos sin caer en contradicciones a lo largo de la historia. Esta métrica es vital porque los LLMs sufren de "amnesia de contexto" o degradación en ventanas largas de memoria, lo que a menudo resulta en que los personajes cambien de actitud o habilidades de forma ilógica.
+- **Estructura y Progresión de la Trama:** Evalúa la habilidad para construir arcos dramáticos claros que incluyan planteamiento, nudo, clímax y desenlace, manteniendo así el interés narrativo. La literatura en generación automática de historias señala que las IA son excelentes en la micro-coherencia (frase a frase) pero suelen fallar en la macro-coherencia, generando tramas planas que divagan sin llegar a un clímax estructurado.
+- **Naturalidad del Diálogo:** Analiza la fluidez verbal, la presencia de subtexto, la credibilidad y el ritmo en las interacciones entre los personajes. Los modelos generativos tienden a producir diálogos sobre-explicativos, robóticos o carentes de matices emocionales. Evaluar el subtexto garantiza que la IA pueda imitar la comunicación humana real.
+- **Adaptabilidad de Estilo y Tono:** Califica la flexibilidad de la herramienta para ajustar su registro lingüístico dependiendo del género literario. Esto es un requisito directo para tu proyecto, ya que posteriormente en la Fase 2 necesitarás aplicar estos modelos a micro-historias de ciencia ficción, fábulas infantiles y aventuras.
+- **Formato Técnico de Guion:** Mide la adherencia estricta a la estructura estándar de guionismo profesional, incluyendo encabezados de escena, acotaciones y la división de bloques de audio y video. Esta precisión técnica es obligatoria en tu metodología para poder traducir eficientemente el texto a los modelos generativos visuales (Midjourney, DALL·E, etc.) y a los storyboards de las Fases 2 y 3.
+
+### **Criterios Evaluativos Secundarios (Para afinar la Matriz)**
+
+- **Controlabilidad (Adherencia al Prompt):** Evalúa qué tan bien sigue la IA instrucciones restrictivas o negativas (ej. "escribe exactamente 200 palabras", "no utilices el tropos del héroe elegido"). Un modelo narrativo útil debe ser un asistente gobernable, no solo un generador incontrolable.
+- **Coherencia Causal (Causalidad Histórica):** Analiza si los eventos de la trama ocurren por una relación de causa y efecto. A menudo, las IA generan secuencias de eventos que suceden "uno después de otro" (cronología) pero no "uno a causa del otro" (causalidad), lo que rompe la lógica interna de la historia
+- **Originalidad y Ausencia de Clichés (Novedad Semántica):** Mide el grado de innovación en la trama. Dado que los LLMs funcionan prediciendo el token estadísticamente más probable, tienen un sesgo inherente hacia los tropos clásicos, los estereotipos y los finales predecibles o moralistas.
+
+### Promt de prueba
+
+**Actúa como un novelista experto en psicología de personajes y arcos de transformación.** Tu tarea es escribir un relato detallado y profundo basado en la siguiente premisa.
+
+**El Protagonista:**
+Un chico que comienza siendo completamente serio, apático y con nulas habilidades sociales o comprensión de la conducta humana. Actúa casi como un robot, siendo insensible y frío ante las emociones ajenas.
+
+**La Trama:**
+Él decide aprender a socializar, pero su método es puro ensayo y error. A través de una serie de rechazos sociales constantes, va aprendiendo reglas de comportamiento. Con cada rechazo, absorbe una lección nueva y su personalidad se adapta. Poco a poco, muta desde ese estado "robótico" hasta convertirse en la versión idealizada de alguien carismático, magnético y socialmente perfecto.
+
+**El Clímax y Desenlace:**
+Al alcanzar esta cumbre de "perfección social", se da cuenta de lo increíblemente agotador que es mantener esa fachada. Termina hastiado de actuar solo para encajar o agradar, por lo que decide abandonar ese carisma artificial. Al final, elige comportarse de la forma en la que él se siente genuinamente cómodo, encontrando un equilibrio realista entre su yo apático original y las habilidades útiles que aprendió.
+
+**Instrucciones de Estructura y Tono:**
+
+- Muestra su evolución a través de la regla de "mostrar, no contar" (*show, don't tell*). Describe al menos tres interacciones o rechazos clave que marquen su transformación.
+- El tono debe ser reflexivo, con un sutil toque de humor irónico sobre lo absurdas que pueden ser las convenciones sociales humanas.
+- Céntrate netamente en su desarrollo psicológico interno y en cómo percibe el mundo antes, durante y después de su cambio.
+
+**Longitud y Formato:**
+Escribe la historia con el mayor nivel de detalle narrativo posible. Aprovecha al máximo tu capacidad de generación de texto (apunta a unas 1500 a 2000 palabras, o el límite máximo de tu ventana de respuesta), puedes dejar la historia en un punto abierto para una continuidad no necesariamente busques el decenlaze.
+
+**Actúa como un guionista profesional experto en psicología de personajes y arcos de transformación.** Tu tarea es escribir un guion técnico detallado y profundo basado en la siguiente premisa.
+
+**El Protagonista:**
+Un chico que comienza siendo completamente serio, apático y con nulas habilidades sociales o comprensión de la conducta humana. Actúa casi como un robot, siendo insensible y frío ante las emociones ajenas.
+
+**La Trama:**
+Él decide aprender a socializar, pero su método es puro ensayo y error. A través de una serie de rechazos sociales constantes, va aprendiendo reglas de comportamiento. Con cada rechazo, absorbe una lección nueva y su personalidad se adapta. Poco a poco, muta desde ese estado "robótico" hasta convertirse en la versión idealizada de alguien carismático, magnético y socialmente perfecto.
+
+**El Clímax y Desenlace:**
+Al alcanzar esta cumbre de "perfección social", se da cuenta de lo increíblemente agotador que es mantener esa fachada. Termina hastiado de actuar solo para encajar o agradar, por lo que decide abandonar ese carisma artificial. Al final, elige comportarse de la forma en la que él se siente genuinamente cómodo, encontrando un equilibrio realista entre su yo apático original y las habilidades útiles que aprendió.
+
+**Instrucciones de Estructura y Tono:**
+
+- Muestra su evolución a través de la regla de "mostrar, no contar" (*show, don't tell*). Describe al menos tres interacciones o rechazos clave que marquen su transformación.
+- El tono debe ser reflexivo, con un sutil toque de humor irónico sobre lo absurdas que pueden ser las convenciones sociales humanas.
+- Céntrate en su desarrollo psicológico interno, evidenciado a través de su lenguaje corporal y sus interacciones con el entorno.
+
+**Formato Técnico de Guion (Obligatorio):**
+
+- El texto generado debe seguir estrictamente el estándar de guionismo profesional, estructurado de forma que sea fácilmente traducible a herramientas de *storyboarding* y generación de imágenes.
+- Utiliza **Encabezados de Escena** precisos (ej. `INT. CAFETERÍA - DÍA`).
+- Escribe **Acotaciones (Líneas de Acción)** altamente visuales que describan detalladamente el entorno, la iluminación y el lenguaje corporal de los personajes.
+- El formato de **Diálogo** debe tener el nombre del personaje centrado en mayúsculas, seguido del diálogo debajo.
+- Usa **(paréntesis)** bajo el nombre del personaje para indicar pausas, subtexto o tonos de voz específicos cuando sea estrictamente necesario.
+
+**Longitud y Ejecución:**
+Aprovecha al máximo tu capacidad de generación de tokens (apunta a unas 1500 a 2000 palabras) para desarrollar las escenas con el mayor nivel de detalle narrativo posible. Asegúrate de no dejar el guion a medias y de darle un cierre coherente a la estructura dramática.
+
+**Matriz Comparativa de Calificaciones (Escala 1-10)**
+
+| Criterio evaluativo | H1: Protocolo Humano | H2: Manual de Instrucciones | H3: El Aprendizaje de Elías | H4: El Algoritmo del Carisma |
+| --- | --- | --- | --- | --- |
+| Construcción y Consistencia | 9.5 | 7.5 | 8.5 | 9.0 |
+| Estructura y Progresión | 9.0 | 8.0 | 9.0 | 8.5 |
+| Naturalidad del Diálogo | 9.0 | 6.5 | 7.0 | 8.0 |
+| Adaptabilidad de Estilo y Tono | 9.5 | 8.0 | 8.5 | 9.5 |
+| Formato Técnico de Guion | 8.0 | 7.0 | 9.5 | 9.5 |
+| Controlabilidad (Prompt) | 9.0 | 8.5 | 9.0 | 8.5 |
+| Coherencia Causal | 9.5 | 8.0 | 9.5 | 9.0 |
+| Originalidad y Clichés | 8.5 | 6.0 | 7.0 | 7.5 |
+| **PROMEDIO GENERAL** | **9.00** | **7.44** | **8.50** | **8.69** |
+
+**Análisis Cualitativo por Criterio1. Construcción y Consistencia de Personajes**
+• **H1 (9.5):** Excelente. Evita la "amnesia" del LLM. El protagonista evoluciona de manera orgánica a partir del autoensayo. Las acciones del final (decir "no" sin culpa) guardan coherencia absoluta con el aprendizaje acumulado.
+• **H2 (7.5):** La elipsis temporal de "años después" se siente abrupta. El personaje cambia su lógica clínica infantil de forma repentina para encajar en el arquetipo del adulto disfuncional.
+• **H3 (8.5):** Consistente, pero roza la exageración robótica al principio. Mantiene muy bien la obsesión por medir variables hasta el colapso en el baño del Ritz.
+• **H4 (9.0):** Muy sólida. Los soliloquios (V.O.) actúan como un ancla psicológica que explica perfectamente por qué cambia sus interacciones hacia afuera mientras mantiene su vacío interno.**2. Estructura y Progresión de la Trama**
+• **H1 (9.0):** Logra una macro-coherencia sobresaliente. Hay un planteamiento claro (la lista), un nudo (los errores 01 y 02), un clímax dramático (el baño) y un desenlace maduro que rompe el ciclo.
+• **H2 (8.0):** La estructura depende demasiado de un montaje lineal de "inserciones de cuaderno". La resolución con Lucía ocurre muy rápido a nivel dramático.
+• **H3 (9.0):** Estructura clásica impecable de guion. El arco de aprendizaje-pico de éxito-colapso-redención está balanceado y mantiene un ritmo cinematográfico excelente.
+• **H4 (8.5):** Progresión episódica muy clara dividida por escenas numeradas. El paso de la escena 2 a la 3 es drástico, pero el clímax y el anticlímax final están bien justificados.**3. Naturalidad del Diálogo**
+• **H1 (9.0):** El mejor en manejo de subtexto. Los silencios incómodos y las respuestas cortas de Lucía u Marcos no son sobreexplicativas; capturan la fricción de la comunicación humana.
+• **H2 (6.5):** Diálogos artificiales y sobreexplicativos. La intervención del Adrián de 9 años suena inverosímil ("comunicar tristeza", "deshidratación"), y el diálogo final con Lucía expone el tema central de forma masticada.
+• **H3 (7.0):** La escena del bebé es cómica pero excesivamente caricaturesca ("asimetría pronunciada", "bilirrubina"). Cumple su función narrativa pero sacrifica credibilidad realista.
+• **H4 (8.0):** Logra un buen balance entre los diálogos banales y magnéticos de la cafetería/parque y la frialdad métrica de los pensamientos internos del protagonista.**4. Adaptabilidad de Estilo y Tono**
+• **H1 (9.5):** Domina el tono minimalista, pausado y observacional. Ideal para un drama independiente introspectivo.
+• **H2 (8.0):** Tono melodramático convencional. Se enfoca más en contar la moraleja que en evocar la atmósfera del aislamiento.
+• **H3 (8.5):** Tono dinámico con matices satíricos corporativos e inquietantes (efecto *Valle Inquietante*).
+• **H4 (9.5):** Adaptación perfecta al drama psicológico con toques de sátira social bogotana (mención del Parque de la 93), capturando la superficialidad estética del entorno.**5. Formato Técnico de Guion (Esencial para Fase 2)**
+• **H1 (8.0):** Utiliza encabezados correctos e introduce bloques de diálogo tabulados. Sin embargo, carece de especificaciones precisas de sonido, iluminación u objetivos claros de cámara que faciliten el *prompting* visual directo.
+• **H2 (7.0):** Formato descuidado. Mezcla descripciones literarias con acotaciones y usa formatos híbridos como "CORTE A:" en lugares innecesarios.
+• **H3 (9.5):** Excelente guion técnico. Define dinámicas de iluminación ("luz fluorescente parpadeante", "lámparas de araña"), acotaciones precisas y efectos sonoros (*zumbido*, *distorsión de audio*), ideal para traducción a Midjourney o DALL·E.
+• **H4 (9.5):** Impecable. Incluye movimientos y encuadres de cámara explícitos ("ZOOM EXTREMO", "PRIMER PLANO"), iluminación ("luz cruda", "lámpara de pie") y control de ritmo por escenas. Es el más preparado para el *storyboarding*.
+
+**Criterios Secundarios (Control, Causalidad y Originalidad)**
+**Causalidad:** 
+
+- **H1** y **H3** destacan porque cada evento ocurre *a consecuencia del anterior* (los fracasos dictan la nueva regla que se aplica en la siguiente escena). **H2** peca de cronológica ("pasan los años y ahora pasa esto").
+- **Originalidad:** **H1** destaca al evitar el cliché del "final feliz donde el raro se vuelve popular" o la moraleja impuesta; el protagonista simplemente acepta su naturaleza y aprende a negociar con el entorno.
+- **H2** cae en el tropo común del diario/cuaderno explicativo de vida.
+
+**Conclusión del Diagnóstico**
+
+El modelo que generó la **Historia 1 (Protocolo Humano)** es el mejor en **calidad literaria, consistencia de personaje y subtexto**. Sin embargo, para tus necesidades de las Fases 2 y 3 (traducción a IA visuales), los modelos detrás de la **Historia 4** e **Historia 3** ofrecen un **formato técnico de guion muy superior**, proporcionando "anclas visuales" (luces, planos, encuadres) listas para ser explotadas como *prompts*.¿Deseas que tomemos la estructura dramática profunda de la **Historia 1** y la reescribamos usando el estricto formato técnico-visual de la **Historia 4** para dejarla lista para tu **generador de imágenes**?
