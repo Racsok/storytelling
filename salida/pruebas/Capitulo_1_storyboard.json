@@ -1,0 +1,51 @@
+[
+    {
+        "numero_escena": 1,
+        "fragmento_texto": "El sol de otoño pintaba las calles con arpegios dorados. Oscar 'Oscar' Gacha se sentía como un cóndor alargando sus alas antes de aterrizar en el empuje inicial hacia la universidad.",
+        "descripcion_visual": "Pansorama de una ciudad de otoño bajo sol, las calles acaban pintadas con arpegios dorados por la luz. Oscar Gacha, un joven de tez morena y ropa ligera, se prepara para su viaje matutino con actitud soñadora.",
+        "personajes_en_escena": ["Oscar 'Oscar' Gacha"],
+        "prompt_ingles": "A youthful figure in casual clothes with a touch of tanned skin is standing on his bicycle in golden autumn streetlights, preparing for his morning journey. His eyes reflect the hopefulness and strength of early mornings."
+    },
+    {
+        "numero_escena": 2,
+        "fragmento_texto": "—Qué lindo día para hacer mi rutina matutina —susurró, ajustándose el casco mientras doblaba la rueda al estacionar frente al edificio donde vivía su perro perdido, Runt.",
+        "descripcion_visual": "Oscar Gacha stopping his bike in front of a building, looking at the address on the gate with determination. He adjusts his helmet while addressing his lost dog, Runt, from inside the building.",
+        "personajes_en_escena": ["Oscar 'Oscar' Gacha", "Runt"],
+        "prompt_ingles": "A young man tightening his bike helmet as he parks in front of a brick building. In the background, a dog named Runt can be seen at an address sign inside."
+    },
+    {
+        "numero_escena": 3,
+        "fragmento_texto": "Un ligero viento movía las hojas de las acacias a su paso, creando un suspiro que acompañaba a los ladridos lejanos de otros canes. Oscar se inclinó para revisar las tarjetas identificadas del bolsillo del vestido de Runt.",
+        "descripcion_visual": "A figure walking down the street being carried by gentle wind moving leaves of acacia trees, behind him dog barking in the distance. The protagonist bending to check identification cards from his lost puppy’s vest.",
+        "personajes_en_escena": ["Oscar 'Oscar' Gacha", "Runt"],
+        "prompt_ingles": "A young man walking down a leafy street with wind and distant dog sounds, checking ID tags on a lost dog's vest."
+    },
+    {
+        "numero_escena": 4,
+        "fragmento_texto": "—Supongo que te ha dado calor, amigo —dedujo por la mugre en su pata izquierda.",
+        "descripcion_visual": "Oscar crouching to look at his lost dog 'Runt' with a worn-out demeanor. A spot on the dog's left paw is clearly dirty and wet with sweat.",
+        "personajes_en_escena": ["Oscar 'Oscar' Gacha", "Runt"],
+        "prompt_ingles": "A young man kneeling to inspect Runt, his lost dog, showing a visibly soiled spot on its left paw."
+    },
+    {
+        "numero_escena": 5,
+        "fragmento_texto": "Su semblante cambiaría a uno más serio al toparse con una huella roja y un bocado desgarrado en la pata de Runt. La fatiga golpeó sus huesos como una manta ligera, y el eco de su grito resonó por los edificios de piedra.",
+        "descripcion_visual": "Close-up of Oscar's face shifting from carefree to worried, noticing blood and a severe bite on his lost dog 'Runt'. A sound effects track with echoing screams reverberating through stone buildings in the background.",
+        "personajes_en_escena": ["Oscar 'Oscar' Gacha", "Runt"],
+        "prompt_ingles": "A close-up of a young man's face showing concern as he notices blood and severe bite marks on his lost dog, Runt, with echoing screams reverberating through the stone buildings."
+    },
+    {
+        "numero_escena": 6,
+        "fragmento_texto": "Oscar abrió los ojos y sintió algo agitándolo. Miró para ver al perro mordiéndole fuertemente en el brazo.",
+        "descripcion_visual": "A disoriented Oscar Gacha, wide-eyed and shaken, turns to look at his dog Runt who is biting him fiercely on the arm.",
+        "personajes_en_escena": ["Oscar 'Oscar' Gacha", "Runt"],
+        "prompt_ingles": "An open-eyed man, disoriented, turning around to face a ferocious bite from his lost dog named Runt on his upper arm."
+    },
+    {
+        "numero_escena": 7,
+        "fragmento_texto": "—¡Runt! —rugió mientras intentaba liberarse, sintiendo la resistencia del pico metálico.",
+        "descripcion_visual": "Oscar Gacha, drenched in sweat, struggles against Runt's strong bite while facing the cold reality of the metal beak.",
+        "personajes_en_escena": ["Oscar 'Oscar' Gacha", "Runt"],
+        "prompt_ingles": "A young man heavily sweating, fighting back a powerful bite from his lost dog with determination and fear battling within him."
+    }
+]
